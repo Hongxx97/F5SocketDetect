@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  
+  
+  	<!-- 数据库连接信息 -->
+	<database>
+	    <is_encryption>0</is_encryption>
+		<dbtype>ORACLE</dbtype>
+		<!--dbtype>DB2</dbtype>-->
+		<charset>GBK</charset><!-- 数据库字符集是：gbk 还是 iso -->
+		<!-- AWP DM 的数据库信息 -->
+		<defaultProvider>
+			<driver>oracle.jdbc.driver.OracleDriver</driver>
+			<!--driver>com.ibm.db2.jcc.DB2Driver</driver-->
+			<!-- zhangqiang add 测试环境数据库 begin 20180316-->
+			<serverURL>jdbc:oracle:thin:@192.168.102.5:1521/ceDZYY1</serverURL>
+			<username>c##tjyy</username>
+			<password>tjyy</password>
+		</defaultProvider>
+	</database>
+</root>
